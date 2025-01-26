@@ -1,0 +1,126 @@
+html {
+  scroll-behavior: smooth;
+  font-style: normal;
+  font-size: 10px;
+}
+
+body {
+  background-color: black;
+  color: wheat;
+  padding: 2rem;
+}
+
+button {
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: aquamarine;
+  text-transform: capitalize;
+  border: 0.2rem solid coral;
+  color: rgb(3, 88, 3);
+  &:hover {
+    color: aquamarine;
+    background-color: coral;
+    border-color: aquamarine;
+  }
+  &:disabled {
+    pointer-events: none;
+    background-color: gray;
+    border-color: black;
+  }
+}
+
+input {
+  height: 2rem;
+}
+h2,
+h3 {
+  text-align: center;
+  color: yellowgreen;
+  padding-bottom: 2rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+
+table {
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 2rem;
+}
+thead {
+  font-size: 2rem;
+  color: aquamarine;
+}
+
+tbody {
+  font-size: 1.6rem;
+  color: yellowgreen;
+}
+
+.sort__button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: transparent;
+  font-size: 2rem;
+  font-weight: bold;
+
+  > svg {
+    margin-left: 1rem;
+    animation: change__fill 5s infinite;
+  }
+}
+.sort__button.active {
+  > svg {
+    transform: rotate(180deg);
+  }
+}
+
+.race__result,
+.sort__button {
+  animation: change__color 5s infinite;
+}
+.pagination__container {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: center;
+}
+
+@keyframes change__color {
+  0% {
+    color: yellowgreen;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: yellowgreen;
+  }
+  75% {
+    color: yellow;
+  }
+  100% {
+    color: yellowgreen;
+  }
+}
+
+@keyframes change__fill {
+  0% {
+    fill: yellowgreen;
+  }
+  25% {
+    fill: yellow;
+  }
+  50% {
+    fill: yellowgreen;
+  }
+  75% {
+    fill: yellow;
+  }
+  100% {
+    fill: yellowgreen;
+  }
+}

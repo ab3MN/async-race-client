@@ -1,1 +1,1 @@
-# async-race-client
+[Deploy](https://ab3mn.github.io/async-race-client/index.html)
